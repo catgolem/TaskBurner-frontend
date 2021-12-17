@@ -375,7 +375,13 @@
                 You are the hottest man in the world!
               </div>
               <img class="inline-block ml-1 pl-3" src="../Assets/per.png" alt="完了">
-              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>              
+              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>    
+              <div class="inline-block mr-14 pl-4 pr-6 ">
+                <img class="inline-block" src="../Assets/Themo2.png" alt="温度計">
+                  <div class="inline-block text-shadow-sm align-middle ml-1 text-2xl text-red-600 font-black">
+                    200°C
+                  </div>
+              </div>
             </div>
           </div>
           <!-- Rank -->
@@ -395,7 +401,13 @@
                 The Antarctic ice is melting because of your heat!
               </div>
               <img class="inline-block ml-1 pl-3" src="../Assets/per.png" alt="完了">
-              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>              
+              <div class="ml-3 inline-block rounded-full align-middle">Cat</div> 
+              <div class="inline-block mr-14 pl-4 pr-6 ">
+                <img class="inline-block" src="../Assets/Themo2.png" alt="温度計">
+                  <div class="inline-block text-shadow-sm align-middle ml-1 text-2xl text-red-600 font-black">
+                    125°C
+                  </div>
+              </div>
             </div>
           </div>
           <!-- Rank -->
@@ -415,7 +427,13 @@
                 The Arctic ice is melting because of your heat!
               </div>
               <img class="inline-block ml-1 pl-3" src="../Assets/per.png" alt="完了">
-              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>              
+              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>
+              <div class="inline-block mr-14 pl-4 pr-6 ">
+                <img class="inline-block" src="../Assets/Themo2.png" alt="温度計">
+                  <div class="inline-block text-shadow-sm align-middle ml-1 text-2xl text-red-600 font-black">
+                    100°C
+                  </div>
+              </div>              
             </div>
           </div>
           <!-- Rank -->
@@ -435,7 +453,13 @@
                 Your heat is cheap!
               </div>
               <img class="inline-block ml-1 pl-3" src="../Assets/per.png" alt="完了">
-              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>              
+              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>  
+              <div class="inline-block mr-14 pl-4 pr-6 ">
+                <img class="inline-block" src="../Assets/Themo2.png" alt="温度計">
+                  <div class="inline-block text-shadow-sm align-middle ml-1 text-2xl text-red-600 font-black">
+                    75°C
+                  </div>
+              </div>            
             </div>
           </div>
           <!-- Rank -->
@@ -455,7 +479,13 @@
                 Your heat is cheap!
               </div>
               <img class="inline-block ml-1 pl-3" src="../Assets/per.png" alt="完了">
-              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>              
+              <div class="ml-3 inline-block rounded-full align-middle">Cat</div>
+              <div class="inline-block mr-14 pl-4 pr-6 ">
+                <img class="inline-block" src="../Assets/Themo2.png" alt="温度計">
+                  <div class="inline-block text-shadow-sm align-middle ml-1 text-2xl text-red-600 font-black">
+                    55°C
+                  </div>
+              </div>              
             </div>
           </div>
         </div>
