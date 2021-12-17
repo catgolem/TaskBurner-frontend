@@ -350,14 +350,14 @@
 
 
       <!-- 右側のブロック（ランキングのところ） -->
-      <div class="row-span-2 col-span-1 border-4 border-black shadow-lg rounded-lg bg-red-300">
+      <div class="row-span-2 col-span-1 border-4 border-black shadow-lg rounded-lg bg-red-300 overflow-hidden">
         <!-- タイトル -->
         <div class="border-b-4 border-black flex justify-start text-shadow-sm align-middle ml-3 text-2xl font-black py-2">
           <img class="mr-2" src="../Assets/TaskIcon2.png" alt="リストアイコン">
           Crazy Burners !!
         </div>
         <!-- リスト -->
-        <div class="align-middle text-2xl font-black overscroll-auto overflow-auto pl-4 text-2xl font-black opacity-80 section">
+        <div style="height: 48vh;" class="overscroll-auto overflow-auto align-middle text-2xl font-black pl-4 text-2xl font-black opacity-80 section">
           <!-- Rank -->
           <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
