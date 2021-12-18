@@ -1,5 +1,5 @@
 <template>
-  <div style="background: linear-gradient(-45deg, orange, pink);" class="h-screen font-body">
+  <div style="background: linear-gradient(-45deg, red, orange);" class="h-screen font-body">
     <!-- 一番上のブロック -->
     <div class="flex justify-between pt-8 pl-10 pb-5">
       <!-- TaskBurner -->
@@ -10,7 +10,7 @@
         </div>
       </div>
       <!-- 温度計 -->
-      <div class="border-3 rounded-full border-black mr-14 pl-4 pr-6 opacity-80 shadow-md">
+      <div class="border-3 rounded-full bg-white border-black mr-14 pl-4 pr-6 opacity-80 shadow-md">
         <img class="inline-block" src="../Assets/Themo2.png" alt="温度計">
         <div class="inline-block text-shadow-sm align-middle ml-1 text-2xl text-red-600 font-black">
           200°C
@@ -19,7 +19,7 @@
     </div>
 
     <!-- メインのブロック -->
-    <div style="height: 90vh;" class="grid grid-rows-3 grid-cols-2 gap-7 py-8 mx-10 opacity-80">
+    <div style="height: 86vh;" class="grid grid-rows-3 grid-cols-2 gap-7 py-8 mx-10 opacity-80">
       <!-- 左のブロック（タスク一覧） -->
       <div class="border-4 border-black row-span-3 col-span-1 shadow-lg rounded-lg overflow-hidden bg-gray-100">
         <!-- タイトル -->
@@ -30,9 +30,9 @@
           <div class="mr-6">Add</div>
         </div>
         <!-- リスト -->
-        <div style="height: 76.8vh;" class="overscroll-auto overflow-auto pl-4 text-2xl font-black opacity-80 section">
+        <div style="height: 68vh;" class="overscroll-auto overflow-auto pl-4 text-2xl font-black opacity-80 section">
           <!-- Task -->
-          <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
+          <div class="pb-2 pt-2 my-1 flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
             <div class="inline-block border-r-4 border-gray-600 pr-2">
               <div>
@@ -57,7 +57,7 @@
             </div>
           </div>
           <!-- Task -->
-          <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
+          <div class="pb-2 pt-2 my-1 flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
             <div class="inline-block border-r-4 border-gray-600 pr-2">
               <div>
@@ -82,7 +82,7 @@
             </div>
           </div>
           <!-- Task -->
-          <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
+          <div class="pb-2 pt-2 my-1 flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
             <div class="inline-block border-r-4 border-gray-600 pr-2">
               <div>
@@ -107,7 +107,7 @@
             </div>
           </div>
           <!-- Task -->
-          <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
+          <div class="pb-2 pt-2 my-1 flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
             <div class="inline-block border-r-4 border-gray-600 pr-2">
               <div>
@@ -132,7 +132,7 @@
             </div>
           </div>
           <!-- Task -->
-          <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
+          <div class="pb-2 pt-2 my-1 flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
             <div class="inline-block border-r-4 border-gray-600 pr-2">
               <div>
@@ -157,7 +157,7 @@
             </div>
           </div>
           <!-- Task -->
-          <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-200 border-b-4 border-dotted">
+          <div class="pb-2 pt-2 my-1 flex justify-start border-gray-200 border-b-4 border-dotted">
             <!-- 左 -->
             <div class="inline-block border-r-4 border-gray-600 pr-2">
               <div>
@@ -182,7 +182,7 @@
             </div>
           </div>
           <!-- Task -->
-          <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
+          <div class="pb-2 pt-2 my-1 flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
             <div class="inline-block border-r-4 border-gray-600 pr-2">
               <div>
@@ -268,7 +268,7 @@
           Done Task
         </div>
         <!-- リスト -->
-        <div style="height: 19vh;" class="overscroll-auto overflow-auto pl-4 text-2xl font-black opacity-80 section">
+        <div style="height: 14vh;" class="overscroll-auto overflow-auto pl-4 text-2xl font-black opacity-80 section">
           <!-- Task -->
           <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->
@@ -357,7 +357,7 @@
           Crazy Burners !!
         </div>
         <!-- リスト -->
-        <div style="height: 48vh;" class="overscroll-auto overflow-auto align-middle text-2xl font-black pl-4 text-2xl font-black opacity-80 section">
+        <div style="height: 41vh;" class="overscroll-auto overflow-auto align-middle text-2xl font-black pl-4 opacity-80 section">
           <!-- Rank -->
           <div class="pb-2 pt-2 my-1 inline-block flex justify-start border-gray-00 border-b-4 border-dotted">
             <!-- 左 -->

@@ -47,6 +47,11 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
+
+  env: {
+    baseUrl: 'http://yulinchi.pigeons.house:8000/'
+  },
+
   googleFonts: {
     families: {
       // a simple name
