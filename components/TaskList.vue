@@ -54,12 +54,10 @@ export default {
   methods: {
     async deleteTask(){
       try{
-        console.log("deleteだよ！");
         const response_delete = await axios.delete('/api/v1/tasks/'+ this.id,{
-          headers:{ "jwt-token" : "Bearer " +  this.getToken}
+          headers:{ "jwt-token" : "Bearer " +  localStorage.getItem("jwt")}
         });
-        console.log(response_delete);
-        this.$router.push('/SignIn');
+        location.reload();
         return;
       }catch (error) {
         console.error(error);
@@ -69,12 +67,10 @@ export default {
     },
     async compTask(){
       try{
-        console.log("compだよ！");
         const response_comp = await axios.patch('/api/v1/tasks/complete/'+ this.id, this.id,{
-          headers:{ "jwt-token" : "Bearer " +  this.getToken}
+          headers:{ "jwt-token" : "Bearer " +  localStorage.getItem("jwt")}
         });
-        console.log(response_comp);
-        this.$router.push('/SignIn');
+        location.reload();
         return;
       }catch (error) {
         console.error(error);

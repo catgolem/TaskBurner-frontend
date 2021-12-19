@@ -50,13 +50,11 @@ export default {
       var mm = ('0' + d.getMinutes()).slice(-2);
       this.task.deadline = yyyy + '/' + MM + '/' + dd + ' ' + hh + ':' + mm;
       try {
-        console.log("呼び出し成功");
         this.task.level = Number(this.task.level);
         const response = await axios.post('/api/v1/tasks',this.task, {
-          headers:{ "jwt-token" : "Bearer " +  this.getToken }
+          headers:{ "jwt-token" : "Bearer " +  localStorage.getItem("jwt") }
         });
-        console.log(response.data,"NewTask");
-        this.$router.push('/SignIn');
+        location.reload();
       } catch (error) {
         console.error(error);
         console.error("postTaskでエラーが発生しました。");

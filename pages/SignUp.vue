@@ -34,9 +34,7 @@ export default {
   methods: {
     async postuser(){
       try {
-        console.log("できた");
         const response = await axios.post('/api/v1/users/signup',this.user);
-        console.log(response);
       } catch (error) {
         console.error(error);
         console.error("SignUpでエラーが発生しました。");
@@ -47,9 +45,9 @@ export default {
           email:this.user.email,
           password:this.user.password
           });
-        console.log(response_signin);
         this.$store.commit("setIsLogin", true);
         this.$store.commit("setToken", response_signin.data.jwt);
+        localStorage.setItem("jwt", response_signin.data.jwt);
         this.$router.push('/Home');
       } catch (error) {
         console.error(error);

@@ -114,12 +114,9 @@ export default {
   methods: {
     async getTasks(){
       try {
-        console.log("できた");
-        console.log(this.getToken);
         const response = await axios.get('/api/v1/tasks',{
-          headers:{ "jwt-token" : "Bearer " +  this.getToken}
+          headers:{ "jwt-token" : "Bearer " +  localStorage.getItem("jwt")}
         });
-        console.log(response);
         this.undone_tasks = response.data.uncompleted;
         this.done_tasks = response.data.completed;
 
@@ -151,7 +148,6 @@ export default {
             return done_task;
          } 
         );
-        console.log(this.undone_tasks);
         return;
       } catch (error) {
         console.error(error);
@@ -162,9 +158,8 @@ export default {
     async getTemp(){
       try {
         const response_temp = await axios.get('/api/v1/users/me',{
-            headers:{ "jwt-token" : "Bearer " +  this.getToken}
+            headers:{ "jwt-token" : "Bearer " +  localStorage.getItem("jwt")}
           });
-        console.log(response_temp.data);
         this.temp = response_temp.data.temperature;
         return;
       } catch (error) {
@@ -175,11 +170,9 @@ export default {
     },
     async getRank(){
       try {
-        console.log("tryだよ");
         const response_ranks = await axios.get('/api/v1/users/ranking',{
-            headers:{ "jwt-token" : "Bearer " +  this.getToken}
+            headers:{ "jwt-token" : "Bearer " + localStorage.getItem("jwt")}
           });
-        console.log(response_ranks.data);
         this.ranks = response_ranks.data;
         var i = 1;
         var cache_rank = 1;
@@ -212,11 +205,8 @@ export default {
   },
   async mounted(){
       await this.getTasks()
-      console.log("コンソールだよ");
       await this.getTemp()
-      console.log("てんぷだよ");
       await this.getRank();
-      console.log("ランクだよ");
   },
 }
 </script>

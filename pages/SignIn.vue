@@ -36,9 +36,9 @@ export default {
           email:this.user.email,
           password:this.user.password
           });
-        console.log(response_signin);
         this.$store.commit("setIsLogin", true);
         this.$store.commit("setToken", response_signin.data.jwt);
+        localStorage.setItem("jwt", response_signin.data.jwt);
         this.$router.push('/Home');
       } catch (error) {
         console.error(error);
