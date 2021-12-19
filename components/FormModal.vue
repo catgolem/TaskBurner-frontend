@@ -56,15 +56,13 @@ export default {
           headers:{ "jwt-token" : "Bearer " +  this.getToken }
         });
         console.log(response.data,"NewTask");
+        this.$router.push('/SignIn');
       } catch (error) {
         console.error(error);
         console.error("postTaskでエラーが発生しました。");
         return;
       }
     },
-    async getTemp(){
-      
-    }
   },
   computed: {
     getToken() {

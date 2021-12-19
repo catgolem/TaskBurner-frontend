@@ -59,6 +59,7 @@ export default {
           headers:{ "jwt-token" : "Bearer " +  this.getToken}
         });
         console.log(response_delete);
+        this.$router.push('/SignIn');
         return;
       }catch (error) {
         console.error(error);
@@ -73,6 +74,7 @@ export default {
           headers:{ "jwt-token" : "Bearer " +  this.getToken}
         });
         console.log(response_comp);
+        this.$router.push('/SignIn');
         return;
       }catch (error) {
         console.error(error);

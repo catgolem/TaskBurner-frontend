@@ -71,7 +71,7 @@
         </div>
         <!-- リスト -->
         <div style="height: 41vh;" class="overscroll-auto overflow-auto align-middle text-2xl font-black pl-4 opacity-80 section">
-          <ranking/>
+          <ranking v-for="rank in ranks" :key="rank.id" :number="rank.number" :id="rank.id" :name="rank.name" :temperature="rank.temperature"/>
         </div>
       </div>
 
@@ -168,11 +168,30 @@ export default {
     },
     async getRank(){
       try {
+        console.log("tryだよ");
         const response_ranks = await axios.get('/api/v1/users/ranking',{
             headers:{ "jwt-token" : "Bearer " +  this.getToken}
           });
         console.log(response_ranks.data);
-        ranks = response_ranks.data;
+        this.ranks = response_ranks.data;
+        var i = 1;
+        var cache_rank = 1;
+        var cache_temp = 0;
+        this.ranks = this.ranks.map(
+          (rank) => {
+            if (cache_temp != rank.temperature){
+              rank.number = i;
+              cache_temp = rank.temperature;
+              cache_rank = rank.number;
+            } else {
+              rank.number = cache_rank;
+            }
+            i++;
+            return rank;
+          } 
+        );
+        console.log(this.ranks);
+        this.ranks = response_ranks.data;
         return;
       } catch (error) {
         console.error(error);
@@ -186,6 +205,8 @@ export default {
       console.log("コンソールだよ");
       await this.getTemp()
       console.log("てんぷだよ");
+      await this.getRank();
+      console.log("ランクだよ");
   },
 }
 </script>
