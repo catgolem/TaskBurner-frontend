@@ -6,7 +6,7 @@
           <form @submit.prevent>
             <input class="block my-3 py-2 px-1 pl-3 rounded-full shadow-inner" type="text" required placeholder="name" v-model="user.name"> 
             <input class="block my-3 py-2 px-1 pl-3 rounded-full shadow-inner" type="text" required placeholder="email" v-model="user.email"> 
-            <input class="block my-3 py-2 px-1 pl-3 rounded-full shadow-inner" type="text" required placeholder="password" v-model="user.password">             
+            <input class="block my-3 py-2 px-1 pl-3 rounded-full shadow-inner" type="password" required placeholder="password" v-model="user.password">             
             <button class="border-b-3 px-3 block ml-40 text-shadow-sm align-middle text-base font-medium opacity-80 hover:bg-white shadow-2xl rounded-xl" type="submit" @click="postuser">
               送信
             </button>
