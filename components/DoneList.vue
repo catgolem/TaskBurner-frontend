@@ -13,7 +13,7 @@
             </div> 
             <!-- 右 -->
             <div class="inline-brock">
-              <div class="ml-3">
+              <div class="ml-5">
                 {{title}}
               </div>
               <div v-if="level == 0" class="ml-3 inline-block rounded-full px-1 border-4 border-red-200 align-middle">ぬるい</div>

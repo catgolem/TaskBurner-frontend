@@ -17,7 +17,13 @@
         <div class="inline-block text-shadow-sm align-middle ml-1 text-2xl font-black text-red-600 ">
           Task Burner
         </div>
+          <img class="inline-block pl-1" v-if="ranking == 1" src="../Assets/champ.png">
+          <img class="inline-block pl-1" v-if="ranking == 2" src="../Assets/rank.png">
+          <img class="inline-block pl-1" v-if="ranking == 3" src="../Assets/rank.png">
+          <img class="inline-block pl-1" v-if="ranking == 4" src="../Assets/rank.png">
+          <img class="inline-block pl-1" v-if="ranking == 5" src="../Assets/rank.png">
       </div>
+
       <!-- 温度計 -->
       <div class="border-3 rounded-full bg-white border-black mr-14 pl-4 pr-6 opacity-80 shadow-md">
         <img class="inline-block" src="../Assets/Themo2.png" alt="温度計">
@@ -96,7 +102,8 @@ export default {
       temp:0,
       undone_tasks:[],
       done_tasks:[],
-      ranks:[]
+      ranks:[],
+      ranking:0,
     }
   },
   computed: {
@@ -187,6 +194,9 @@ export default {
               rank.number = cache_rank;
             }
             i++;
+            if(rank.temperature == this.temp){
+              this.ranking = rank.number;
+            }
             return rank;
           } 
         );
