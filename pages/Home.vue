@@ -96,6 +96,7 @@ export default {
       temp:0,
       undone_tasks:[],
       done_tasks:[],
+      ranks:[]
     }
   },
   computed: {
@@ -165,6 +166,20 @@ export default {
         return;
       }
     },
+    async getRank(){
+      try {
+        const response_ranks = await axios.get('/api/v1/users/ranking',{
+            headers:{ "jwt-token" : "Bearer " +  this.getToken}
+          });
+        console.log(response_ranks.data);
+        ranks = response_ranks.data;
+        return;
+      } catch (error) {
+        console.error(error);
+        console.error("getRanksでエラーが発生しました。");
+        return;
+      }
+    }
   },
   async mounted(){
       await this.getTasks()

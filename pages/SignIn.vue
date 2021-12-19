@@ -37,13 +37,9 @@ export default {
           password:this.user.password
           });
         console.log(response_signin);
-        console.log(this.$store);
         this.$store.commit("setIsLogin", true);
         this.$store.commit("setToken", response_signin.data.jwt);
-        console.log(this.$store.data);
-        console.log(this.$store.commit("xxxxx", true));
-
-        // this.$router.push('/Home');
+        this.$router.push('/Home');
       } catch (error) {
         console.error(error);
         console.error("SignInでエラーが発生しました。");
