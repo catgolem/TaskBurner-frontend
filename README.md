@@ -1,7 +1,7 @@
 # TaskBurner-frontend
 
 ## Deploy Domein
- https://task-burner-frontend.vercel.app/home
+ https://task-burner-frontend.vercel.app/
 
 ## Build Setup
 
