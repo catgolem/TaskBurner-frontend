@@ -38,11 +38,25 @@
         </h1>
       </div>
     </div> 
+
     <!-- 右 -->
     <div class="inline-brock">
-      <div class="ml-3">
+      <div v-if="number == 1" class="ml-3">
+        You're the Crazyest Burner in the world!!!
+      </div>
+      <div v-if="number == 2" class="ml-3">
+        You can be the sun!!
+      </div>
+      <div v-if="number == 3" class="ml-3">
         You are the hottest man in the world!
       </div>
+      <div v-if="number == 4" class="ml-3">
+        I'll melt in your heat!
+      </div>
+      <div v-if="number == 5" class="ml-3">
+        Wow, the fish burned because of you!
+      </div>
+
       <img class="inline-block ml-1 pl-3" src="../Assets/per.png" alt="完了">
       <div class="ml-3 inline-block rounded-full align-middle">{{name}}</div>    
       <div class="inline-block mr-14 pl-4 pr-6 ">
