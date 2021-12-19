@@ -49,7 +49,7 @@ export default {
   },
 
   env: {
-    baseUrl: 'http://yulinchi.pigeons.house:8000/'
+    baseUrl: 'https://task-burner.azurewebsites.net/'
   },
 
   googleFonts: {
