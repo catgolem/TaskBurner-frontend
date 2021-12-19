@@ -48,7 +48,7 @@
         You can be the sun!!
       </div>
       <div v-if="number == 3" class="ml-3">
-        You are the hottest man in the world!
+        You are about to melt my wax wings!
       </div>
       <div v-if="number == 4" class="ml-3">
         I'll melt in your heat!
