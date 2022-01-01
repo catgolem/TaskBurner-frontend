@@ -6,7 +6,7 @@
         <div class="opacity-80 mr-7 ml-3 pr-16 pl-10 border-b-3 border-black">
         <img class="inline-block shadow-3xl" src="../Assets/Fire2.png" alt="🔥">
         <div class="inline-block ml-2 text-shadow-sm align-middle text-2xl font-black text-red-600 ">
-          うんこ！うんこ！うんこ！
+          Task Burner
         </div>
       </div>
       </div>
